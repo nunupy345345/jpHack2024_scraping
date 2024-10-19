@@ -5,7 +5,13 @@ description = "Add your description here"
 authors = [
     { name = "nunupy345345", email = "unknown@domain.invalid" }
 ]
-dependencies = []
+dependencies = [
+    "requests>=2.32.3",
+    "bs4>=0.0.2",
+    "selenium>=4.25.0",
+    "webdriver-manager>=4.0.2",
+    "chromedriver-binary==130.0.6723.58",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
