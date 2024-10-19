@@ -17,6 +17,7 @@ def scrape_station_info(url):
     
     facilities = {
         'station': station_name,
+        'line_name' : get_line_name(url),
         '車いす対応エレベータ': -1,
         'エレベータ': -1,
         'エスカレータ': -1,
@@ -51,6 +52,31 @@ def scrape_station_info(url):
                 break
     print(facilities)
     return facilities
+
+def get_line_name(url):
+    line_map = {
+        'line01': '名古屋本線',
+        'line02': '豊川線',
+        'line03': '西尾線・蒲郡線',
+        'line04': '三河線（知立～碧南）',
+        'line05': '三河線（知立～猿投）',
+        'line06': '豊田線',
+        'line07': '常滑線・空港線',
+        'line08': '築港線',
+        'line09': '河和線・知多新線',
+        'line10': '津島線・尾西線',
+        'line11': '竹鼻線・羽島線',
+        'line12': '犬山線',
+        'line13': '広見線',
+        'line14': '小牧線',
+        'line15': '各務原線',
+        'line16': '瀬戸線'
+    }
+    
+    for line_code, line_name in line_map.items():
+        if line_code in url:
+            return line_name
+    return '不明な路線'
 
 def main():
     # URLリスト
