@@ -8,7 +8,8 @@ def extract_urls(html_text):
 
 # HTMLテキスト（実際の使用時にはこの変数に与えられたテキストを代入します）
 html_text = '''
-<div class="station-name-list"><div class="loading disnon"><span>お待ちください...</span></div><h2>紀勢本線</h2><ul class="clearfix"><li><a href="/station-guide/tokai/kameyama/index.html">亀山</a></li><li><a href="/station-guide/tokai/tsu/index.html">津</a></li><li><a href="/station-guide/tokai/matsusaka/index.html">松阪</a></li><li><a href="/station-guide/tokai/taki/index.html">多気</a></li><li><a href="/station-guide/tokai/kii-nagashima/index.html">紀伊長島</a></li><li><a href="/station-guide/tokai/owase/index.html">尾鷲</a></li><li><a href="/station-guide/tokai/kumanoshi/index.html">熊野市</a></li></ul></div>'''
+<div class="station-name-list"><div class="loading disnon"><span>お待ちください...</span></div><h2>飯田線</h2><ul class="clearfix"><li><a href="/station-guide/shinkansen/toyohashi/index.html">豊橋</a></li><li><a href="/station-guide/tokai/toyokawa/index.html">豊川</a></li><li><a href="/station-guide/tokai/shinshiro/index.html">新城</a></li><li><a href="/station-guide/tokai/chubu-tenryu/index.html">中部天竜</a></li><li><a href="/station-guide/tokai/iida/index.html">飯田</a></li><li><a href="/station-guide/tokai/inashi/index.html">伊那市</a></li></ul></div>
+'''
 # URLを抽出
 urls = extract_urls(html_text)
 
