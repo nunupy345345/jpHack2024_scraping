@@ -50,9 +50,7 @@ async def add_vote_fields():
                         for doc in current_batch:
                             doc_ref = db.collection('facilities').document(doc.id)
                             batch.update(doc_ref, {
-                                'vote_inside_gate': 0,
-                                'vote_outside_gate': 0,
-                                'vote_no': 0
+                                'vote_both': 0,
                             })
 
                         # バッチのコミット
