@@ -8,3 +8,9 @@
 ```
 rye run python ...
 ```
+
+### fast API
+
+```
+rye run uvicorn main:app --reload
+```
