@@ -5,6 +5,6 @@ build/
 dist/
 wheels/
 *.egg-info
-
+jphack2024-firebase-adminsdk-k0m2t-f6ab51cd72.json
 # venv
 .venv
