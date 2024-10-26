@@ -11,6 +11,8 @@ dependencies = [
     "selenium>=4.25.0",
     "webdriver-manager>=4.0.2",
     "chromedriver-binary==130.0.6723.58",
+    "fastapi[all]>=0.115.3",
+    "firebase-admin>=6.5.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
